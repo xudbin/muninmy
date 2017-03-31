@@ -34,3 +34,4 @@ lamp add
  需要使用的话，在 /etc/munin/plugins/ 下面去做个软连接就好了。
  软连接   ln -s '' ''
  
+https://mikemiao111.com/centos7-munin/
