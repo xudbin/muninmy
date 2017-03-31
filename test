@@ -2,3 +2,14 @@
 
 chown -R munin:munin  /var/www/munin
 
+ 9.munin拥有非常丰富的插件库，官方的插件库可以在https://github.com/munin-monitoring/contrib/tree/master/plugins
+ 或者http://gallery.munin-monitoring.org/contrib/找到，
+ 其实所谓插件，就是一个可以执行的脚本而已。
+ 下载下来的脚本文件放在/etc/munin/plugins/目录，chmod+x做好可执行权限就OK了，
+ munin-node在收集数据的时候会自动去执行它。
+ 但是部分插件是需要配置才能正常工作的，具体大家可以用编辑器打开插件文件，
+ 一般都会有比较详细的注释。还有一部分是安装时自带的插件，
+ 默认放在 /usr/share/munin/plugins/  目录下面，
+ 需要使用的话，在 /etc/munin/plugins/ 下面去做个软连接就好了。
+ 软连接   ln -s '' ''
+ 
