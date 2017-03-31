@@ -1,0 +1,4 @@
+# muninmy
+
+chown -R munin:munin  /var/www/munin
+
