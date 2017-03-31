@@ -1,6 +1,27 @@
 # muninmy
 
+yum install munin munin-node 
+
+vi  /etc/munin/munin.conf
+# 下面四行去掉注释，其他默认
+dbdir   /var/lib/munin
+#munin生成html页面保存的路径，放在网站目录下面
+htmldir /var/www/html/munin
+logdir /var/log/munin
+rundir  /var/run/munin
+
+
 chown -R munin:munin  /var/www/html/munin
+
+
+#建立软连接，把插件tcp 放进去
+ln -s 'usr/share/munin/plugins/tcp' '/etc/munin/plugins/tcp'
+
+service munin-node restart
+
+
+#添加虚拟主机
+lamp add 
 
  9.munin拥有非常丰富的插件库，官方的插件库可以在https://github.com/munin-monitoring/contrib/tree/master/plugins
  或者http://gallery.munin-monitoring.org/contrib/找到，
