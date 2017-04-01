@@ -22,7 +22,11 @@ service munin-node restart
 
 #添加虚拟主机
 lamp add 
-
+修改/usr/local/apache/conf/extra/httpd-vhosts.conf 可以修改网站指向
+ 上层已经在 /usr/local/apache/conf/httpd.conf 指定 下层 extra里的相应文件有效 
+ 
+ 
+ 
  9.munin拥有非常丰富的插件库，官方的插件库可以在https://github.com/munin-monitoring/contrib/tree/master/plugins
  或者http://gallery.munin-monitoring.org/contrib/找到，
  其实所谓插件，就是一个可以执行的脚本而已。
