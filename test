@@ -16,7 +16,7 @@ chown -R munin:munin  /var/www/html/munin
 
 #建立软连接，把插件tcp 放进去
 ln -s '/usr/share/munin/plugins/tcp' '/etc/munin/plugins/tcp'
-
+#ln -sfn 强制覆盖
 service munin-node restart
 
 
