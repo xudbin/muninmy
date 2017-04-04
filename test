@@ -23,7 +23,7 @@ service munin-node restart
 #添加虚拟主机
 lamp add 
 修改/usr/local/apache/conf/extra/httpd-vhosts.conf 可以修改网站指向
- 上层已经在 /usr/local/apache/conf/httpd.conf 指定 下层 extra里的相应文件有效 
+上层已经在 /usr/local/apache/conf/httpd.conf 指定 下层 extra里的相应文件有效 
  
  
  
