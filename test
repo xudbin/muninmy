@@ -9,8 +9,9 @@ dbdir   /var/lib/munin
 htmldir /var/www/html/munin
 logdir /var/log/munin
 rundir  /var/run/munin
-/etc/munin/static
-chown -R munin:munin  /var/www/html/munin
+
+chown -R munin:munin /etc/munin/static
+chown -R munin:munin /var/www/html/munin
 
 
 #建立软连接，把插件tcp 放进去
